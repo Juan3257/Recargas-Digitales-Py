@@ -3,72 +3,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recargas Digitales Py</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
             text-align: center;
-            background-color: #f0f0f0;
         }
         .container {
-            width: 90%;
-            max-width: 600px;
-            margin: 20px auto;
-            background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .logo {
-            width: 150px;
+        h1 {
+            animation: fadeIn 2s;
+        }
+        .precios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.2);
         }
         .btn {
             display: inline-block;
-            margin: 10px;
             padding: 10px 20px;
-            background: green;
-            color: white;
+            margin-top: 10px;
+            background: #ffcc00;
+            color: black;
             text-decoration: none;
             border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ffaa00;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <div class="container" id="welcome">
-        <img src="logo.png" alt="Recargas Digitales Py" class="logo">
+    <div class="container">
         <h1>Bienvenido a Recargas Digitales Py</h1>
-        <p>Tu mejor opción para recargar diamantes y paquetes especiales.</p>
-        <a href="#precios" class="btn">Entrar</a>
-    </div><div class="container" id="precios">
-    <h2>Lista de Precios Py</h2>
-    <p>💠 Diamantes con Bonus 10%</p>
-    <ul>
-        <li>110 diamantes → 💰 G 8.000</li>
-        <li>220 diamantes → 💰 G 16.000</li>
-        <li>341 diamantes → 💰 G 24.000</li>
-        <li>451 diamantes → 💰 G 32.000</li>
-        <li>572 diamantes → 💰 G 40.000</li>
-        <li>682 diamantes → 💰 G 48.000</li>
-        <li>792 diamantes → 💰 G 56.000</li>
-        <li>913 diamantes → 💰 G 64.000</li>
-        <li>1.023 diamantes → 💰 G 72.000</li>
-        <li>1.114 diamantes → 💰 G 80.000</li>
-        <li>1.245 diamantes → 💰 G 88.000</li>
-        <li>1.364 diamantes → 💰 G 96.000</li>
-        <li>1.485 diamantes → 💰 G 96.000</li>
-        <li>1.716 diamantes → 💰 G 111.000</li>
-    </ul>
-    <a href="https://wa.me/595986737325" class="btn">Comprar en WhatsApp</a>
-</div>
-
-<div class="container">
-    <h2>Paquetes Especiales</h2>
-    <ul>
-        <li>Booyah → 💰 G 15.000</li>
-        <li>Paquete Semana → 💰 G 20.000</li>
-        <li>Paquete Mensual → 💰 G 70.000</li>
-    </ul>
-    <a href="https://wa.me/595986737325" class="btn">Comprar en WhatsApp</a>
-</div>
-
+        <p>Elige la cantidad de diamantes que deseas:</p>
+        <div class="precios">
+            <div class="card">110 diamantes → G 8.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">220 diamantes → G 16.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">341 diamantes → G 24.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">451 diamantes → G 32.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">572 diamantes → G 40.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">682 diamantes → G 48.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">792 diamantes → G 56.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">BOOYAH → G 15.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">Paquete Semana → G 20.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+            <div class="card">Paquete Mensual → G 70.000 <a href="https://wa.me/595986737325" class="btn">Comprar</a></div>
+        </div>
+    </div>
 </body>
 </html>
